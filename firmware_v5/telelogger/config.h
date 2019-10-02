@@ -57,8 +57,8 @@
 // change the following line to change network device
 #define NET_DEVICE NET_WIFI
 // WiFi settings
-#define WIFI_SSID "LII"
-#define WIFI_PASSWORD "industri@40"
+#define WIFI_SSID "jordy"
+#define WIFI_PASSWORD "roteador"
 // WiFi Mesh settings
 #define WIFI_MESH_ID "123456"
 #define WIFI_MESH_CHANNEL 13

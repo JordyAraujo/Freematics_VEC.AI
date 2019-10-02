@@ -71,11 +71,11 @@ PID_LIST PIDLog[] = {
     {PID_INTAKE_TEMP, true, "Intake Temp"},
     {PID_THROTTLE, true, "Throttle"},
     {PID_ENGINE_LOAD, true, "Engine Load"},
-    {PID_RELATIVE_THROTTLE_POS, true, "Rel Throttle Pos"},
-    {PID_EMISSION_MAF, true, "Emission MAF"},
-    {PID_MAF_FLOW, true, "MAF Flow"},
-    {PID_EMISSION_MAP, true, "Emission MAP"},
-    {PID_INTAKE_MAP, true, "Intake MAP"},
+    {PID_RELATIVE_THROTTLE_POS, false, "Rel Throttle Pos"},
+    {PID_EMISSION_MAF, false, "Emission MAF"},
+    {PID_MAF_FLOW, false, "MAF Flow"},
+    {PID_EMISSION_MAP, false, "Emission MAP"},
+    {PID_INTAKE_MAP, false, "Intake MAP"},
     {PID_BATTERY_VOLTAGE, true, "Battery Voltage"},
     {PID_DEVICE_TEMP, true, "Device Temp"},
 };
@@ -407,40 +407,40 @@ bool processGPS(CBuffer* buffer)
 
   if (buffer) {
     if (GPSLog[0].log) {
-      logger.log(PID_GPS_DATE, gd->date);
+      //logger.log(PID_GPS_DATE, gd->date);
       buffer->add(PID_GPS_DATE, gd->date);
     }
     if (GPSLog[1].log) {
-      logger.log(PID_GPS_TIME, gd->time);
+      //logger.log(PID_GPS_TIME, gd->time);
       buffer->add(PID_GPS_TIME, gd->time);
     }
     if (gd->lat && gd->lng && gd->alt) {
       if (GPSLog[2].log) {
-        logger.log(PID_GPS_LATITUDE, gd->lat);
+        //logger.log(PID_GPS_LATITUDE, gd->lat);
         buffer->add(PID_GPS_LATITUDE, gd->lat);
       }
       if (GPSLog[3].log) {
-        logger.log(PID_GPS_LONGITUDE, gd->lng);
+        //logger.log(PID_GPS_LONGITUDE, gd->lng);
         buffer->add(PID_GPS_LONGITUDE, gd->lng);
       }
       if (GPSLog[4].log) {
-        logger.log(PID_GPS_ALTITUDE, gd->alt); /* m */
+        //logger.log(PID_GPS_ALTITUDE, gd->alt); /* m */
         buffer->add(PID_GPS_ALTITUDE, gd->alt); /* m */
       }
       if (GPSLog[5].log) {
-        logger.log(PID_GPS_SPEED, kph);
+        //logger.log(PID_GPS_SPEED, kph);
         buffer->add(PID_GPS_SPEED, kph);
       }
       if (GPSLog[6].log) {
-        logger.log(PID_GPS_HEADING, gd->heading);
+        //logger.log(PID_GPS_HEADING, gd->heading);
         buffer->add(PID_GPS_HEADING, gd->heading);
       }
       if (GPSLog[7].log) {
-        logger.log(PID_GPS_SAT_COUNT, gd->sat);
+        //logger.log(PID_GPS_SAT_COUNT, gd->sat);
         buffer->add(PID_GPS_SAT_COUNT, gd->sat);
       }
       if (GPSLog[8].log) {
-        logger.log(PID_GPS_HDOP, gd->hdop);
+        //logger.log(PID_GPS_HDOP, gd->hdop);
         buffer->add(PID_GPS_HDOP, gd->hdop);
       }
     }

@@ -1,10 +1,11 @@
 {
     "terminal.integrated.env.linux": {
-        "PATH": "/home/dsil/.platformio/penv/bin:/home/dsil/.platformio/penv:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+        "PATH": "/home/jordy/.platformio/penv/bin:/home/jordy/.platformio/penv:/home/jordy/.local/bin:/home/jordy/anaconda3/bin:/home/jordy/anaconda3/condabin:/home/jordy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
         "PLATFORMIO_CALLER": "vscode"
     },
     "files.associations": {
         "*.tcc": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "cmath": "cpp"
     }
 }
