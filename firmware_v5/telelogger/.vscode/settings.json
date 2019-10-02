@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/dsil/.platformio/penv/bin:/home/dsil/.platformio/penv:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "files.associations": {
+        "*.tcc": "cpp",
+        "vector": "cpp"
+    }
+}
